@@ -63,3 +63,43 @@ header h1 {
   margin-top: 20px;
   margin-left: 15px;
 }
+
+/*----------------------------------------RESPONSIVE----------------------------------------*/
+@media only screen and (max-width: 600px) {
+  .header_image_container {
+    overflow: hidden;
+    height: 300px;
+    border: solid black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .header_image_container img {
+    width: fit-content;
+    margin-top: -530px;
+    filter: brightness(50%);
+    margin-left: -115px;
+  }
+  header h1 {
+    position: absolute;
+    font-family: "Playfair Display", serif;
+    color: antiquewhite;
+    font-size: 50px;
+    left: calc(15%);
+    right: calc(15%);
+    top: 0;
+  }
+  .li_1,
+  .li_3,
+  .li_5 {
+    border-right: 2px solid;
+    padding-right: 5%;
+  }
+
+  .li_6 {
+    margin-right: 8%;
+  }
+  .li_2,
+  .li_4 {
+    display: none;
+  }
+}
